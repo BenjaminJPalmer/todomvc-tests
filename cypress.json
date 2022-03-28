@@ -1,3 +1,4 @@
 {
+    "baseUrl": "https://todomvc.com/examples/vanillajs/",
     "watchForFileChanges": false
 }

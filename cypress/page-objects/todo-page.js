@@ -1,6 +1,7 @@
 export class TodoPage {
     navigate() {
-        cy.visit('https://todomvc.com/examples/vanillajs/')
+        // Url not required as baseUrl set in cypress.json
+        cy.visit("")
     }
 
     addTodo(todoText) {
