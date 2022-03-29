@@ -12,11 +12,7 @@ export class TodoPage {
         cy.get(`.todo-list li:nth-child(${todoIndex + 1}) label`).should('have.text', expectedText)
     }
 
-    toggleSecondItem() {
-        cy.get(".todo-list li:nth-child(2) .toggle").click()
-    }
-
-    toggleTodo() {
-        cy.get(".toggle").click()
+    toggleItem(n) {
+        cy.get(`.todo-list li:nth-child(${n}) .toggle`).click()
     }
 }

@@ -6,13 +6,13 @@ describe("Todo filtering", () => {
     const todoPage = new TodoPage()
 
     beforeEach(() => {
-        todoPage.navigate()
+        todoPage.navigate("")
 
         todoPage.addTodo("Learn Cypress")
         todoPage.addTodo("Clean room")
         todoPage.addTodo("Use Cypress")
 
-        todoPage.toggleSecondItem()
+        todoPage.toggleItem(2)
     })
 
     it('Should filter "Active" todos', () => {
