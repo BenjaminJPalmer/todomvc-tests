@@ -13,6 +13,7 @@ describe('Visual validation', () => {
             {name: 'firefox', width: 1024, height: 768},
             {deviceName: 'iPhone X'}
         ]}))
+
     afterEach(() => cy.eyesClose())
 
     it('Should look good', () => {
