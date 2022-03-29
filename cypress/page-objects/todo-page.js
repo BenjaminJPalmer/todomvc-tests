@@ -15,4 +15,8 @@ export class TodoPage {
     toggleSecondItem() {
         cy.get(".todo-list li:nth-child(2) .toggle").click()
     }
+
+    toggleTodo() {
+        cy.get(".toggle").click()
+    }
 }
